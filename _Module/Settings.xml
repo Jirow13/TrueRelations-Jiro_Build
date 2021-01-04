@@ -1,0 +1,106 @@
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!-- ***************************************************** -->
+	<!-- PARTY LEADERS**************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Allows gaining positive reputation with allied party leaders during battles | true / false -->
+	<battle_leaders_good_reputation_enabled>true</battle_leaders_good_reputation_enabled>
+	
+	<!-- Allows gaining negative reputation with enemy party leaders during battles (may even result in positive relations with honorable or valorous leaders) | true / false -->
+	<battle_leaders_bad_reputation_enabled>true</battle_leaders_bad_reputation_enabled>
+	
+	<!-- AI Relationship changes among themselves without player involvement | true / false -->
+	<battle_leaders_ai_reputation_enabled>true</battle_leaders_ai_reputation_enabled>
+	
+	<!-- ***************************************************** -->
+	<!-- PLAYER*********************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Allows the player to gain Traits and Skills depending on actions | true / false -->
+	<player_trait_skill_gain_enabled>true</player_trait_skill_gain_enabled>
+	
+	<!-- Adjusts the amounts of XP points earned towards Traits and Skills for the player | 1 = 100% / 0.5 = 50% / 1.5 = 150% -->
+	<player_trait_skill_gain_rate>1</player_trait_skill_gain_rate>
+	
+	<!-- ***************************************************** -->
+	<!-- COMPANIONS******************************************* -->
+	<!-- ***************************************************** -->
+	
+	<!-- Allows gaining positive reputation with companions from battles and actions | true / false -->
+	<battle_companions_good_reputation_enabled>true</battle_companions_good_reputation_enabled>
+	
+	<!-- Allows gaining negative reputation with companions from desertion, hunger, actions they do not approve of or constant defeats | true / false -->
+	<battle_companions_bad_reputation_enabled>true</battle_companions_bad_reputation_enabled>
+	
+	<!-- Allows companions to get gain small bonuses to skills from battles and actions | true / false -->
+	<companions_skill_gain_enabled>true</companions_skill_gain_enabled>
+	
+	<!-- Adjusts the amounts of XP points earned towards Skills for companions | 1 = 100% / 0.5 = 50% / 1.5 = 150% -->
+	<companions_skill_gain_rate>1</companions_skill_gain_rate>
+	
+	<!-- Enables companions to gain traits similar to player based on relationship levels | true / false -->
+	<companion_trait_sharing_enabled>true</companion_trait_sharing_enabled>
+	
+	<!-- ***************************************************** -->
+	<!-- FAMILY*********************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Allows gaining positive reputation with family from battles and actions | true / false -->
+	<battle_family_good_reputation_enabled>true</battle_family_good_reputation_enabled>
+	
+	<!-- Allows gaining negative reputation with family from desertion, hunger, actions they do not approve of or constant defeats | true / false -->
+	<battle_family_bad_reputation_enabled>true</battle_family_bad_reputation_enabled>
+	
+	<!-- Allows gaining reputation with all family members (regardless where they are) with large scale actions and battles | true / false -->
+	<family_global_bonus_enabled>true</family_global_bonus_enabled>
+	
+	<!-- Allows family to get gain a small bonus to skills from battles and actions | true / false -->
+	<family_skill_gain_enabled>true</family_skill_gain_enabled>
+	
+	<!-- Adjusts the amounts of XP points earned towards Skills for family | 1 = 100% / 0.5 = 50% / 1.5 = 150% -->
+	<family_skill_gain_rate>1</family_skill_gain_rate>
+	
+	<!-- Enables family to gain traits similar to player based on relationship levels | true / false -->
+	<family_trait_sharing_enable>true</family_trait_sharing_enable>
+	
+	<!-- ***************************************************** -->
+	<!-- FACTION********************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Allows gaining reputation with all faction members (regardless where they are) with large scale actions and battles | true / false -->
+	<faction_global_bonus_enabled>true</faction_global_bonus_enabled>
+	
+	<!-- ***************************************************** -->
+	<!-- RANDOM EVENTS**************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Enables random conversations and events post-battle | true / false -->
+	<random_events_enabled>true</random_events_enabled>
+	
+	<!-- Enables confrontation events when taking actions that companions oppose | true / false -->
+	<confrontation_events_enabled>true</confrontation_events_enabled>
+	
+	<!-- The chance of a random event occurring after a battle (keep low to avoid repetition) | 1 = 100% / 0.1 = 10% -->
+	<random_events_chance>0.10</random_events_chance>
+	
+	<!-- ***************************************************** -->
+	<!-- BANDITS BONUS**************************************** -->
+	<!-- ***************************************************** -->
+	
+	<!-- Enables gaining reputation with random nearby notables upon defeating brigands and looters | true / false -->
+	<bandit_battle_bonus_enabled>true</bandit_battle_bonus_enabled>
+	
+	<!-- Determines how many bandits need to be defeated for each bonus point | Do not set to 0 or below -->
+	<bandit_battle_bandits_for_bonus>10</bandit_battle_bandits_for_bonus>
+	
+	<!-- Sets the minimum bonus received upon defeating a bandit group | Do not set below 0 -->
+	<bandit_battle_minimum_bonus>1</bandit_battle_minimum_bonus>
+	
+	<!-- ***************************************************** -->
+	<!-- TOURNAMENT BONUS************************************* -->
+	<!-- ***************************************************** -->
+	
+	<!-- Enables a small increase in the reputation with the settlement, companions and settlment owner upon winning a tournament | true / false -->
+	<tournament_bonus_enabled>true</tournament_bonus_enabled>
+</Settings>

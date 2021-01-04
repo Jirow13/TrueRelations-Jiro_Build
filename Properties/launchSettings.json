@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "TrueRelations": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
+      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*BetterExceptionWindow*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Bannerlord.MBOptionScreen.MCMv3*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*Aragas.AltSaveMissingModuleFix*CombatBandage*CraftedItemCopyright*Ctrl_Auto_Smelts*CurryFavorByKillingBandits*DeveloperConsole*DiplomacyFixes*EconomyTweak_h*ExtendedFamily*ExitSettlement*HousesCalradia*ImprovedGarrisons*InterestingClans*MCTRDecayedisRevived*UsefullCompanions*InterestingCompanions*KillBanditsRaiseRelations*KaosesPartySizes*NPCRevamp*ManageRemoteCompanions*NobleNobles*Pacemaker*PartyScreenEnhancements*RealisticBattleAiModule*LordRetinueUptier*csx*swadian armoury*CharacterReload*zCulturedStart*VsRoyalArmoryRewritten*zzBannerlordTweaks*_MODULES_",
+      "workingDirectory": "$(GameFolder)\\bin\\Win64_Shipping_Client",
+      "sqlDebugging": false
+    }
+  }
+}
