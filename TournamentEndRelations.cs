@@ -11,12 +11,11 @@ using TaleWorlds.Library;
 namespace TrueRelations
 {
 	//[HarmonyPatch(typeof(TournamentCampaignBehavior), "OnTournamentWon")]
-	[HarmonyPatch(typeof(TournamentCampaignBehavior), "OnTournamentFinished", MethodType.Constructor)]
+	[HarmonyPatch(typeof(TournamentCampaignBehavior), "OnTournamentFinished")]
 	internal class TournamentEndRelations
 	{
 		public static void Postfix(CharacterObject winner, Town town)
 		{
-			InformationManager.DisplayMessage(new InformationMessage("Triggered OnTournamentFinished", Color.ConvertStringToColor("#FF0042FF")));
 			bool flag = winner != null && town != null;
 			if (flag)
 			{
@@ -98,15 +97,14 @@ namespace TrueRelations
 						Support.ChangeRelation(Hero.MainHero, heroesInMainParty[j], Support.Chance(num, num2));
 					}
 					Campaign.Current.PlayerTraitDeveloper.AddTraitXp(DefaultTraits.Valor, Support.Random(10, 40));
-					InformationManager.DisplayMessage(new InformationMessage("Triggered AddValor & Charm", Color.ConvertStringToColor("#FF0042FF")));
 					Hero.MainHero.AddSkillXp(DefaultSkills.Charm, (float)Support.Random(20, 100));
 					Support.LogMessage(Hero.MainHero.Name.ToString() + " has shown great valor in the tournament.");
 				}
 			}
 
-			InformationManager.DisplayMessage(new InformationMessage("Triggered EndPostFix", Color.ConvertStringToColor("#FF0042FF")));
+			//InformationManager.DisplayMessage(new InformationMessage("Triggered EndPostFix", Color.ConvertStringToColor("#FF0042FF")));
 		}
 
-		static bool Prepare() { return true; }	
+		static bool Prepare() { return true; }
 	}
 }
